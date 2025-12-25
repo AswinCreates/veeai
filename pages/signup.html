@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../frontend/assets/brian_cut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../frontend/src/output.css" rel="stylesheet">
+    <title>Sign Up – Brian</title>
+</head>
+
+<body class="bg-linear-to-br from-zinc-900 via-slate-900 to-zinc-900 text-gray-500 min-h-screen">
+
+    <header class="bg-transparent/10 backdrop-blur-md fixed w-full top-0 py-4 z-40 shadow-lg shadow-black/50">
+        <div class="flex flex-row mx-auto justify-between px-6 items-center max-w-7xl">
+            <a href="../index.html" class="hover:scale-110 transition-transform duration-300">
+                <img src="../frontend/assets/brian_main.png" alt="brian_logo" class="h-10 drop-shadow-lg">
+            </a>
+            <a href="https://github.com/AswinCreates/brian" target="_blank"
+                class="text-blue-400 border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                <i class="fa-brands fa-github fa-xl"></i> GitHub
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h3 class="text-center text-5xl p-4 font-bold text-white mt-44">Sign Up – Brian</h3>
+        <form action="sign-up" method="post"
+            class="top-5 max-w-xl border border-gray-700/50 bg-linear-to-br from-gray-800 to-gray-900 p-8 rounded-xl shadow-2xl shadow-black/50 mx-auto space-y-6 text-white flex flex-col">
+            <div>
+                <label for="name"><i class="fa-solid fa-id-card-clip"></i> Name</label>
+                <div class="flex flex-row space-x-4">
+                    <input type="text" id="name" name="fname" placeholder="Aswin" required
+                        class="bg-gray-700 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" id="name" name="lname" placeholder="Rout"
+                        class="bg-gray-700 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+            <div>
+                <label for="username"><i class="fa-solid fa-user"></i> Username</label>
+                <input type="text" id="username" name="username" placeholder="aswinrout" required
+                    class="bg-gray-700 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="aswinrout@example.com" required
+                    class="bg-gray-700 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="password"><i class="fa-solid fa-key"></i> Password</label>
+                <input type="password" id="password" name="password" placeholder="aswinrout@123"
+                    class="bg-gray-700 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="re-password"><i class="fa-solid fa-key"></i> Re-Enter Password</label>
+                <input type="password" id="re-password" name="re-password" placeholder="aswinrout@123"
+                    class="bg-gray-700 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex flex-row space-x-4">
+                <button type="submit"
+                    class="border-2 rounded-full w-full h-10 bg-blue-500 hover:bg-blue-600 cursor-pointer border-blue-800"><i
+                        class="fa-solid fa-arrow-right-to-bracket"></i> Sign Up</button>
+                <button type="reset"
+                    class="border-2 rounded-full w-full h-10 bg-blue-500 hover:bg-blue-600 cursor-pointer border-blue-800"><i
+                        class="fa-solid fa-rotate"></i> Reset</button>
+            </div>
+            <h4 class="text-center">Already A Member? <a href="./login.html"
+                    class="text-blue-500 hover:underline">Login</a></h4>
+        </form>
+    </main>
+
+    <section class="bg-linear-to-t from-black to-gray-900 text-white py-16 mt-48">
+        <div class="px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div class="space-y-4">
+                    <img src="../frontend/assets/brian_main.png" alt="Brian Logo" class="h-12 mb-4 drop-shadow-lg" <p
+                        class="text-gray-300 leading-relaxed">Your all-in-one intelligent content creation assistant
+                    powered by cutting-edge AI technology.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/AswinCreates/brian"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-github fa-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/yokaidevs/"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Resources</h3>
+                    <ul class="text-gray-300 space-y-3">
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="../index.html">About</a></li>
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="../pages/legal.html">Policies</a></li>
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="https://storyset.com/">Illustrations
+                                by storyset</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Partner(s)</h3>
+                    <ul class="text-gray-300 space-y-3">
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="https://www.linkedin.com/company/yokaidevs/">Yokai Devs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="text-center py-8 -mb-12 border-t border-gray-700/50 mt-12">
+                <p class="text-xl font-bold">Made with ❤️ by <a href="https://aswinrout.is-a.dev/"
+                        class="text-blue-400 hover:text-blue-300 transition-colors">AswinCreates</a></p>
+            </footer>
+        </div>
+    </section>
+    <script>
+        document.querySelector("form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const fname = document.querySelector('input[name="fname"]').value.trim();
+            const lname = document.querySelector('input[name="lname"]').value.trim();
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const rePassword = document.getElementById("re-password").value;
+
+            if (fname === "" || lname === "" || username === "" || email === "" || password === "" || rePassword === "") {
+                alert("Please fill all fields");
+                return;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long");
+                return;
+            }
+
+            if (!/[a-zA-Z]/.test(password)) {
+                alert("Password must contain at least one letter");
+                return;
+            }
+
+            if (!/[0-9]/.test(password)) {
+                alert("Password must contain at least one number");
+                return;
+            }
+
+            if (!/[^a-zA-Z0-9]/.test(password)) {
+                alert("Password must contain at least one symbol");
+                return;
+            }
+
+            if (password !== rePassword) {
+                alert("Re-Entered password do not match to origin");
+                return;
+            }
+
+            const payload = {
+                name: fname + " " + lname,
+                username: username,
+                email: email,
+                password: password
+            };
+
+            try {
+                const res = await fetch("http://127.0.0.1:8000/create-user", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!res.ok) {
+                    alert("Signup failed");
+                    return;
+                }
+
+                alert("Account created successfully!! Please login to continue.");
+                window.location.href = "login.html";
+
+            } catch (err) {
+                alert("Server error. Please try again later.");
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const token = localStorage.getItem("access_token");
+
+            if (token) {
+                window.location.href = "chat.html";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

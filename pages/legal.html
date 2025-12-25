@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../frontend/assets/brian_cut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../frontend/src/output.css" rel="stylesheet">
+    <title>Policies – Brian</title>
+</head>
+
+<body class="bg-linear-to-br from-zinc-900 via-slate-900 to-zinc-900 text-gray-500 min-h-screen">
+
+    <header class="bg-transparent/10 backdrop-blur-md fixed w-full top-0 py-4 z-40 shadow-lg shadow-black/50">
+        <div class="flex flex-row mx-auto justify-between px-6 items-center max-w-7xl">
+
+            <a href="../index.html" class="hover:scale-110 transition-transform duration-300">
+                <img src="../frontend/assets/brian_main.png" alt="brian_logo" class="h-10 drop-shadow-lg">
+            </a>
+
+            <div class="flex flex-row space-x-4 text-blue-400 font-semibold text-sm">
+                <a id="signup" href="/index.html"
+                    class="border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                    <i class="fa-solid fa-house fa-xl"></i> Home
+                </a>
+                <a href="https://github.com/AswinCreates/brian"
+                    class="border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                    <i class="fa-brands fa-github fa-xl"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-5xl mx-auto px-6 py-12">
+
+        <h1 class="text-5xl font-bold mb-6 mt-28 text-center text-white">Legal</h1>
+
+        <div class="flex gap-4 mb-10">
+            <button id="termsBtn"
+                class="text-blue-400 border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                <i class="fa-brands fa-centos"></i>
+                Terms of Service
+            </button>
+
+            <button id="privacyBtn"
+                class=" text-blue-400 border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                <i class="fa-solid fa-file-contract"></i>
+                Privacy Policy
+            </button>
+        </div>
+
+        <div id="content" class="text-white rounded-xl shadow-md p-8 leading-relaxed">
+        </div>
+
+    </div>
+
+
+    <script>
+        const content = document.getElementById("content");
+        const termsBtn = document.getElementById("termsBtn");
+        const privacyBtn = document.getElementById("privacyBtn");
+
+
+        const termsHTML = `
+      <h1 class="text-3xl font-bold mb-2">Terms of Service</h1>
+        <p class="text-sm text-gray-500 mb-8">Last Updated: December 21, 2025</p>
+
+        <p class="mb-6">
+            We (<strong>“Brian”, “Company”, “We”, “Us”, “Our”</strong>) provide AI-powered content
+            generation services subject to the Terms outlined on this page.
+            By accessing or using Brian or the Brian Website (“Service”),
+            you agree to all Terms listed here, including policies displayed on our website
+            (Privacy Policy, Cookies Policy).
+        </p>
+
+        <p class="mb-10">
+            We appreciate you taking the time to read our Terms of Service and related policies.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Account and Login</h2>
+        <p class="mb-6">
+            To use our services, you may be required to log in or authenticate through a supported
+            provider (such as Email login). You are responsible for maintaining
+            the security of your account and login credentials. You must notify us immediately if
+            you experience any unauthorized access or security issues. You are fully responsible
+            for any activity that occurs through your account.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Brian Website Usage</h2>
+        <p class="mb-4">
+            You may use the Brian website only for personal and lawful purposes. Usage must comply
+            with all Terms mentioned on this page.
+        </p>
+
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Commercial use of the Brian Website or its content without written permission.</li>
+            <li>Data extraction, scraping, crawling, bots, or automated data-gathering tools.</li>
+            <li>Malicious use of the Brian Website or attempts to disrupt functionality.</li>
+            <li>Copyright infringement involving Brian Website content or materials.</li>
+            <li>Exploiting vulnerabilities or unauthorized access attempts.</li>
+            <li>Using Brian Website content to violate any applicable law.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Brian Usage</h2>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Attempt to exploit Brian or misuse the system.</li>
+            <li>Violation of platform policies (e.g., Discord, Google).</li>
+            <li>Violation of Brian Terms, policies, or guidelines.</li>
+            <li>Harming or damaging Brian’s reputation.</li>
+            <li>Copying, cloning, redistributing, or reselling Brian or its features.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Disclaimer</h2>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Brian is provided “as is” without guarantees of error-free operation.</li>
+            <li>No warranties or specific performance guarantees are provided.</li>
+            <li>Copyright-infringing content will be removed upon valid notice.</li>
+            <li>We respect intellectual property rights and expect users to do the same.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Service Termination</h2>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Modify or remove features without notice.</li>
+            <li>Suspend or terminate accounts without prior notice.</li>
+            <li>Block access to the Brian Website or services for violations.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Ownership</h2>
+        <p class="mb-6">
+            All trademarks, designs, code, models, and content on Brian and the Brian Website
+            are owned by us or our licensors under applicable copyright laws.
+            Unauthorized use is strictly prohibited.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Indemnity</h2>
+        <p class="mb-4">
+            You agree to indemnify and hold Brian harmless from claims, damages, losses,
+            liabilities, and expenses arising from:
+        </p>
+
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Your use (or third-party use via your account) of our services.</li>
+            <li>Your violation of these Terms or policies.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Contact</h2>
+        <p>
+            If you have any questions regarding these Terms of Service, contact us at:
+            <a href="mailto:aswinrout94281@gmail.com" class="text-blue-500 font-medium">
+                aswinrout94281@gmail.com
+            </a>
+        </p>
+
+    `;
+
+        const privacyHTML = `
+       <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+        <p class="text-sm text-gray-500 mb-8">Last Updated: December 21, 2025</p>
+
+        <p class="mb-6">
+            At <strong>Brian</strong>, we respect your privacy and are committed to protecting your
+            personal information. This Privacy Policy explains how we collect, use, store, and
+            protect your data when you use Brian or the Brian Website.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Information We Collect</h2>
+        <p class="mb-4">We may collect the following types of information:</p>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Account information (such as name, email, and login provider).</li>
+            <li>Usage data (prompts, generated content, feature usage).</li>
+            <li>Technical data (IP address, browser type, device information).</li>
+            <li>Communication data when you contact support.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">How We Use Your Information</h2>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>To provide, operate, and improve Brian’s services.</li>
+            <li>To personalize user experience and content output.</li>
+            <li>To maintain security and prevent abuse or misuse.</li>
+            <li>To communicate updates, support messages, or policy changes.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">AI-Generated Content</h2>
+        <p class="mb-6">
+            Prompts and generated content may be temporarily processed to provide results.
+            We do not claim ownership over your generated content. However, you are responsible
+            for ensuring that any content you use complies with applicable laws and regulations.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Cookies & Tracking</h2>
+        <p class="mb-6">
+            Brian may use cookies and similar technologies to enhance user experience,
+            analyze usage, and maintain session integrity. You can control cookies through
+            your browser settings.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Data Sharing</h2>
+        <p class="mb-4">
+            We do not sell or rent your personal data. We may share information only when:
+        </p>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Required by law or legal process.</li>
+            <li>Necessary to protect Brian, users, or public safety.</li>
+            <li>Working with trusted service providers under strict confidentiality.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Data Security</h2>
+        <p class="mb-6">
+            We implement reasonable security measures to protect your information.
+            However, no online service can guarantee absolute security.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Third-Party Services</h2>
+        <p class="mb-6">
+            Brian may integrate third-party services (such as authentication providers).
+            We are not responsible for the privacy practices of third-party platforms.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Your Rights</h2>
+        <ul class="list-disc list-inside mb-6 space-y-2">
+            <li>Access or update your personal information.</li>
+            <li>Request deletion of your account and data.</li>
+            <li>Withdraw consent where applicable.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-4">Policy Updates</h2>
+        <p class="mb-6">
+            We may update this Privacy Policy from time to time.
+            Continued use of Brian means you accept the revised policy.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+        <p>
+            If you have any questions or concerns about this Privacy Policy, contact us at:
+            <a href="mailto:aswinrout94281@gmail.com" class="text-blue-500 font-medium">
+                aswinrout94281@gmail.com
+            </a>
+    `;
+
+        content.innerHTML = termsHTML;
+
+        termsBtn.onclick = () => {
+            content.innerHTML = termsHTML;
+        };
+
+        privacyBtn.onclick = () => {
+            content.innerHTML = privacyHTML;
+        };
+    </script>
+
+</body>
+
+</html>

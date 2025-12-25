@@ -1,87 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/vee_cut.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./src/output.css" rel="stylesheet">
-    <title>Home – Vee AI</title>
+    <meta name="description"
+        content="Brian is an AI-powered content generation tool with intelligent writing, text-to-speech voice responses, and fast, human-like AI assistance for creators, marketers, and storytellers.">
+    <link rel="shortcut icon" href="./frontend/assets/brian_cut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./frontend/src/output.css" rel="stylesheet">
+    <title>Home – Brian</title>
 </head>
-<body class="bg-zinc-900 text-gray-500">
-    <header class="bg-transparent fixed w-full backdrop-blur-xs top-0 py-4">
-        <div class="flex flex-row mx-auto justify-between px-6 items-center">
-            <button><a href="index.html"><img src="./assets/vee_main.png" alt="vee_logo" style="width: 100px;"></a></button>
-            <a href="http://github.com/" class="bg-transparent border-2 border-white transition transition-duration-300 hover:scale-120 rounded-full px-4 py-3 text-white"><i class="fa-brands fa-github"></i></a>
+
+<body class="bg-linear-to-br from-zinc-900 via-slate-900 to-zinc-900 text-gray-500 min-h-screen">
+
+    <header class="bg-transparent/10 backdrop-blur-md fixed w-full top-0 py-4 z-40 shadow-lg shadow-black/50">
+        <div class="flex flex-row mx-auto justify-between px-6 items-center max-w-7xl">
+
+            <a href="./index.html" class="hover:scale-110 transition-transform duration-300">
+                <img src="./frontend/assets/brian_main.png" alt="brian_logo" class="h-10 drop-shawdow-lg">
+            </a>
+
+            <div class="flex flex-row space-x-4 text-blue-500 font-semibold text-sm">
+
+                <a id="signup" href="./pages/signup.html"
+                    class="border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                    <i class="fa-solid fa-user-plus fa-xl"></i> Sign Up
+                </a>
+
+                <a href="./pages/login.html" id="login"
+                    class="border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                    <i class="fa-solid fa-arrow-right-to-bracket fa-xl"></i> Log In
+                </a>
+
+                <a href="./pages/chat.html" id="chatBtn"
+                    class="items-center space-x-2 border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                    <i class="fa-solid fa-comment fa-lg"></i>
+                    <span class="font-semibold text-blue-500">Generator</span>
+                </a>
+                <a href="https://github.com/AswinCreates/brian" target="_blank"
+                    class="border-2 border-white/20 backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full px-4 py-3 transition-all duration-300 shadow-md">
+                    <i class="fa-brands fa-github fa-xl"></i> GitHub
+                </a>
+
+            </div>
         </div>
     </header>
 
-    <section id="hero" class="text-center p-10 mt-56 flex flex-row space-x-16 max-w-fit justify-center items-center mx-auto">
+    <section id="hero"
+        class="text-center p-10 mt-56 flex flex-row space-x-16 max-w-fit justify-center items-center mx-auto">
         <div>
-            <h1 class="text-6xl font-extrabold text-white">Welcome To <span class="text-blue-500">Vee AI</span></h1>
-            <p class="max-w-5xl mx-auto text-2xl py-10 text-left">Your all-in-one intelligent content creation assistant designed to turn simple prompts into powerful scripts, captions, stories, and creative writing. Whether you’re building content for social media, marketing, videos, or storytelling, Vee AI helps you create faster, smarter, and with unmatched quality — all in just a few seconds.</p>
-            <a href="./signup.html"><button class=" border-white border-2 rounded-full p-6 font-semibold hover:scale-105 transition-transform duration-200 text-2xl text-blue-500">Start Using Now</button></a>
+            <h1 class="text-6xl font-extrabold text-white">Welcome To <span class="text-blue-500">Brian</span></h1>
+            <p class="max-w-5xl mx-auto text-2xl py-10 text-left">Your all-in-one intelligent content creation assistant
+                designed to turn simple prompts into powerful scripts, captions, stories, and creative writing. Whether
+                you’re building content for social media, marketing, videos, or storytelling, <span
+                    class="font-extrabold">Brian</span> helps you create
+                faster, smarter, and with unmatched quality — all in just a few seconds.</p>
+            <a href="./pages/signup.html"
+                class="text-2xl text-white border-2 border-white backdrop-blur-sm hover:scale-105 hover:border-white/40 hover:bg-white/10 rounded-full p-4 transition-all duration-300 shadow-md">Start
+                Using Now <i class="fa-solid fa-angles-right fa-beat fa-xs"></i></a>
         </div>
         <div>
-            <img src="./assets/vee_home.png" alt="Home Page Icon" class="size-[500px] max-w-full">
+            <img src="./frontend/assets/brian_home.png" alt="Home Page Icon" class="size-[500px] max-w-full">
         </div>
     </section>
 
-    <section id="about" class="grid grid-cols-1 md:grid-cols-2 mx-auto items-center mt-48">
-        <div class="left">
-            <img src="./assets/aboutus.png" alt="About Us" class="size-[600px] mx-auto :hidden">
+    <section id="about" class="py-24 px-6 mt-56">
+        <div class="items-center text-center">
+            <p class="text-blue-500 font-semibold mb-4 text-2xl">New to Brian?</p>
+            <h2 class="text-5xl font-extrabold text-white mb-6">
+                Here's a quick guide to get you started.
+            </h2>
         </div>
-        <div class="max-w-2xl mx-auto p-10 right">
-            <h2 class="text-5xl font-bold mb-6 text-center text-white">About Vee AI</h2>
-            <p class="text-2xl mb-4"><span class="font-extrabold">Vee AI</span> is an advanced AI-powered content creation tool designed to help users generate high-quality scripts, captions, stories, and creative writing with ease. By leveraging cutting-edge natural language processing and machine learning technologies, Vee AI transforms simple prompts into compelling content in seconds.</p>
-            <p class="text-2xl mb-4">Whether you’re a content creator, marketer, or storyteller, Vee AI provides an intuitive platform to enhance your creative process and produce engaging content effortlessly.</p>
-        </div>
-    </section>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-    <section id="features" class="grid grid-cols-1 md:grid-cols-2 mx-auto items-center mt-48">
-        <div class="container text-center mx-auto p-10 left">
-            <h2 class="text-5xl font-bold p-8 text-white">Features</h2>
-            <div class="container">
-                <ul class="text-justify p-8 space-y-6 text-xl">
-                    <li type="dot">Response: Vee AI is designed to deliver content in seconds, ensuring you never miss a deadline. Blink and your content is ready!</li>
-                    <li>Intelligent Writing: Harness the power of AI to craft compelling scripts, captions, and stories that captivate your audience.</li>
-                    <li>Versatile Use Cases: Whether for social media, marketing, or storytelling, Vee AI adapts to your content needs seamlessly.</li>
-                    <li>User-Friendly Interface: An intuitive platform that makes content creation easy for everyone, regardless of technical expertise.</li>
-                </ul>
+            <div>
+                <img src="./frontend/assets/brian_guide.svg" alt="">
+            </div>
+            <div class="space-y-8 ">
+                <div class="flex gap-5">
+                    <div class="text-blue-500 text-2xl font-bold">01</div>
+                    <div>
+                        <h3 class="text-white text-xl font-semibold mb-1">Sign Up or Login</h3>
+                        <p class="text-gray-400">
+                            Create your account or log in securely to access Brian’s AI-powered
+                            tools.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="text-blue-500 text-2xl font-bold">02</div>
+                    <div>
+                        <h3 class="text-white text-xl font-semibold mb-1">Enter Your Prompt</h3>
+                        <p class="text-gray-400">
+                            Type what you need — a caption, script, idea, or explanation —
+                            using simple language.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="text-blue-500 text-2xl font-bold">03</div>
+                    <div>
+                        <h3 class="text-white text-xl font-semibold mb-1">Get Instant Results</h3>
+                        <p class="text-gray-400">
+                            Brian generates high-quality content in seconds with accuracy and
+                            creativity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="text-blue-500 text-2xl font-bold">04</div>
+                    <div>
+                        <h3 class="text-white text-xl font-semibold mb-1">Listen with Text-to-Speech</h3>
+                        <p class="text-gray-400">
+                            Convert responses into natural voice output using built-in
+                            text-to-speech for better accessibility.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="right">
-            <img src="./assets/features.png" alt="Features" class="size-[600px] mx-auto">
+    </section>
+
+
+
+    <section id="features" class="max-w-6xl mx-auto py-32 px-6 mt-48">
+        <div class="text-center mb-16">
+            <p class="text-blue-500 font-semibold mb-4 text-2xl">Why Brian?</p>
+            <h2 class="text-5xl font-extrabold text-white mb-6">
+                Powerful AI Features Built for Creators
+            </h2>
+            <p class="text-gray-400 max-w-3xl mx-auto text-xl">
+                Brian combines intelligent content generation, voice interaction, and a clean user experience to help
+                you create faster, smarter, and better.
+            </p>
+        </div>
+        <div class="md:grid-cols-2 gap-12 space-y-5">
+            <div class="flex gap-6 items-start bg-gray-700/80 rounded-xl p-6 shadow-lg">
+                <div class="h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600/20 text-blue-500 text-xl">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">
+                        Lightning-Fast AI Responses
+                    </h3>
+                    <p class="text-gray-400 text-lg">
+                        Generate high-quality AI content within seconds, helping you save time and stay productive.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-6 items-start bg-gray-700/80 rounded-xl p-6 shadow-lg">
+                <div class="h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600/20 text-blue-500 text-xl">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">
+                        Human-Like Intelligent Writing
+                    </h3>
+                    <p class="text-gray-400 text-lg">
+                        Brian produces natural, meaningful, and engaging content that feels written by a real human.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-6 items-start bg-gray-700/80 rounded-xl p-6 shadow-lg">
+                <div class="h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600/20 text-blue-500 text-xl">
+                    <i class="fa-solid fa-masks-theater"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">
+                        Tone & Style Customization
+                    </h3>
+                    <p class="text-gray-400 text-lg">
+                        Control how Brian writes — professional, casual, creative, or storytelling — all from one
+                        prompt.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-6 items-start bg-gray-700/80 rounded-xl p-6 shadow-lg">
+                <div class="h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600/20 text-blue-500 text-xl">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">
+                        Voice-Enabled AI (Text-to-Speech)
+                    </h3>
+                    <p class="text-gray-400 text-lg">
+                        Listen to AI-generated responses with built-in text-to-speech for better accessibility and
+                        multitasking.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-6 items-start bg-gray-700/80 rounded-xl p-6 shadow-lg md:col-span-2">
+                <div class="h-12 w-12 flex items-center justify-center rounded-lg bg-blue-600/20 text-blue-500 text-xl">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">
+                        Context-Aware Conversations
+                    </h3>
+                    <p class="text-gray-400 text-lg">
+                        Brian understands follow-up prompts and maintains context for smarter, more accurate AI
+                        responses.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="bg-black text-white py-12 mt-48">
-        <div class="px-8">
-            <div class="grid grid-cols-3 gap-12 mb-12">
-                <div>
-                    <img src="./assets/vee_main.png" alt="Vee Logo" class="h-10 mb-4">
-                    <p class="text-gray-300">Your all-in-one intelligent content creation assistant.</p>
+    <section class="bg-linear-to-t from-black to-gray-900 text-white py-16 mt-48">
+        <div class="px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div class="space-y-4">
+                    <img src="../frontend/assets/brian_main.png" alt="Brian Logo" class="h-12 mb-4 drop-shadow-lg">
+                    <p class="text-gray-300 leading-relaxed">Your all-in-one intelligent content creation assistant
+                        powered by cutting-edge AI technology.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/AswinCreates/brian"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-github fa-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/yokaidevs/"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </a>
+                    </div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Resources</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Resources</h3>
                     <ul class="text-gray-300 space-y-3">
-                        <li>About</li>
-                        <li>Terms of Services</li>
-                        <li>Privacy Policy</li>
-                        <li>Illustrations by storyset</li>
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="../index.html"><i class="fa-solid fa-arrow-right mr-2"></i>About</a></li>
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="../pages/legal.html"><i class="fa-solid fa-arrow-right mr-2"></i>Policies</a></li>
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="https://storyset.com/"><i class="fa-solid fa-arrow-right mr-2"></i>Illustrations
+                                by storyset</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Partner(s)</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Partner(s)</h3>
                     <ul class="text-gray-300 space-y-3">
-                        <li>Yokai Devs</li>
+                        <li class="hover:text-blue-400 hover:translate-x-2 transition-all duration-300"><a
+                                href="https://www.linkedin.com/company/yokaidevs/"><i
+                                    class="fa-solid fa-handshake mr-2"></i>Yokai Devs</a></li>
                     </ul>
                 </div>
             </div>
-            <footer class="text-center py-6 border-t-2 border-gray-700 -mb-10">
-                <p class="text-xl font-bold">Made with ❤️ by <a href="https://aswinrout.is-a.dev/" class="text-blue-500">AswinCreates</a></p>
+            <footer class="text-center py-8 -mb-12 border-t border-gray-700/50 mt-12">
+                <p class="text-xl font-bold">Made with ❤️ by <a href="https://aswinrout.is-a.dev/"
+                        class="text-blue-400 hover:text-blue-300 transition-colors">AswinCreates</a></p>
             </footer>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const token = localStorage.getItem("access_token");
+
+            const loginBtn = document.getElementById("login");
+            const signupBtn = document.getElementById("signup");
+            const chatBtn = document.getElementById("chatBtn");
+
+            if (token) {
+                signup.style.display = "none";
+                login.style.display = "none";
+
+                chatBtn.style.display = "inline-flex";
+                logout.style.display = "inline-flex";
+            } else {
+                chatBtn.style.display = "none";
+                logout.style.display = "none";
+            }
+        });
+
+        function goToChat() {
+            window.location.href = "pages/chat.html";
+        }
+    </script>
+
 </body>
+
 </html>
